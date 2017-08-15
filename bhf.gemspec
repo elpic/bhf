@@ -178,8 +178,8 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rails>, [">= 4.2"])
-      s.add_runtime_dependency(%q<turbolinks>, ["~> 2"])
-      s.add_runtime_dependency(%q<kaminari>, ["~> 0"])
+      s.add_runtime_dependency(%q<turbolinks>, ["> 2"])
+      s.add_runtime_dependency(%q<kaminari>, ["> 0"])
       s.add_runtime_dependency(%q<haml-rails>, ["~> 0"])
       s.add_runtime_dependency(%q<sass-rails>, ["~> 5"])
       s.add_development_dependency(%q<shoulda>, ["~> 3"])
@@ -189,8 +189,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<simplecov>, ["~> 0"])
     else
       s.add_dependency(%q<rails>, [">= 4.2"])
-      s.add_dependency(%q<turbolinks>, ["~> 2"])
-      s.add_dependency(%q<kaminari>, ["~> 0"])
+      s.add_dependency(%q<turbolinks>, ["> 2"])
+      s.add_dependency(%q<kaminari>, ["> 0"])
       s.add_dependency(%q<haml-rails>, ["~> 0"])
       s.add_dependency(%q<sass-rails>, ["~> 5"])
       s.add_dependency(%q<shoulda>, ["~> 3"])
@@ -201,8 +201,8 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<rails>, [">= 4.2"])
-    s.add_dependency(%q<turbolinks>, ["~> 2"])
-    s.add_dependency(%q<kaminari>, ["~> 0"])
+    s.add_dependency(%q<turbolinks>, ["> 2"])
+    s.add_dependency(%q<kaminari>, ["> 0"])
     s.add_dependency(%q<haml-rails>, ["~> 0"])
     s.add_dependency(%q<sass-rails>, ["~> 5"])
     s.add_dependency(%q<shoulda>, ["~> 3"])
@@ -212,4 +212,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>, ["~> 0"])
   end
 end
-

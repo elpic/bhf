@@ -5,9 +5,20 @@ Bhf::Engine.routes.draw do
   get 'page/:page', to: 'pages#show', as: :page
 
   scope ':platform' do
+
+    # Rails 5 API doesn't have new/edit paths
+    get 'entries/new', to: 'entries#new', as: :new_entry
+
     resources :entries, except: [:index] do
-      put :sort, on: :collection
-      post :duplicate, on: :member
+      collection do
+        put :sort
+      end
+
+      member do
+        get :edit
+        post :duplicate
+      end
+
 
       resources :embed_entries, except: [:index], as: :embed
     end

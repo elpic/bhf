@@ -10,7 +10,7 @@ module Bhf
 
     initializer 'bhf.helper' do
       ActiveSupport.on_load :action_controller do
-        helper Bhf::FrontendHelper
+        helper Bhf::FrontendHelper if respond_to?(:helper)
       end
     end
 
